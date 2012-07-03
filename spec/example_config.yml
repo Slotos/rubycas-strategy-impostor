@@ -1,0 +1,16 @@
+strategies:
+  strategy: Impostor
+  database:
+    adapter: sqlite
+    database: spec.sqlite
+  user_table: users
+  role_table: roles
+  join_table: roles_users
+  user_key: user_id
+  role_key: role_id
+  username_column: email
+  role_name_column: name
+  allowed_roles:
+    - admin
+    - support
+    - moderator
